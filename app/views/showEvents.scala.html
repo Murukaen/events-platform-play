@@ -1,0 +1,6 @@
+@(events: Seq[Event])
+
+<ul>
+    @events.map{e =>
+        <li>@showEvent(e)</li>}
+</ul>

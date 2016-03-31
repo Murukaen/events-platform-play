@@ -1,7 +1,10 @@
-@(message: String)
+@(message: String)(events: Seq[Event])
 
 @main("Welcome to Play") {
 
-    @play20.welcome(message)
+    @showEvents(events)
 
+    <!--
+    @play20.welcome(message)
+    -->
 }
